@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paweł Pełka - my first website</title>
+    <link href="CSS/body.css" rel="stylesheet">
+    <link href="CSS/header.css" rel="stylesheet">
+    <link href="CSS/navigation.css" rel="stylesheet">
+    <link href="CSS/aboutMeSection.css" rel="stylesheet">
+    <link href="CSS/musicSection.css" rel="stylesheet">
+    <link href="CSS/footer.css" rel="stylesheet">
+    <link href="CSS/article.css" rel="stylesheet">
+    <link href="CSS/table.css" rel="stylesheet">
+    <script defer src="JS/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="body">
+    <header class="header">
+        <h1 class="header__title">Paweł Pełka</h1>
+        <button class="header__buttonChangeTheme js-buttonChangeTheme">Zmień motyw na <span
+                class="header__themeName">ciemny🌛</span></button>
+    </header>
+
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li class="navigation__listItem"><a href="#O_mnie" class="navigation__linkList">O mnie</a></li>
+            <li class="navigation__listItem"><a href="#Zainteresowania/Hobby"
+                    class="navigation__linkList">Zainteresowania / Hobby</a></li>
+            <li class="navigation__listItem"><a href="#Zestawienie_ulubinej_muzyki"
+                    class="navigation__linkList">Zestawienie ulubinej muzyki</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="O_mnie" class="aboutMeSection">
+            <h2 class="aboutMeSection__header">O mnie</h2>
+            <img height="200" src="images/Me.jpg" alt="Paweł Pełka"
+                class="aboutMeSection__photo">
+            <p class="aboutMeSection__paragraph">
+                Urodziłem się w Gdańsku na Przymorzu. W wieku 5 lat stety, bądź niestety <em>przeprowadziliśmy</em>
+                się do Warszawy.<br>
+                Ukończyłem Technikum na kierunku <strong>Technik architektury krajobrazu</strong>.<br>
+                Na co dzień pracuję i od niedawna zgłębiam tajniki programowania z kursem od
+                <i class="aboutMeSection__companyName">YouCode</i>.
+            </p>
+        </section>
+        <article id="Zainteresowania/Hobby" class="article">
+            <h2 class="article__header">Zainteresowania / Hobby</h2>
+            <p class="article__paragraph">
+                Od dłuższego czasu, moim największym zainteresowaniem jest <strong>kawa</strong> i wszysko co z nią
+                związane.<br>
+                Ogromną frajdę i satysfakcję sprawia mi eksperymentowanie z różnymi rodzajami kawy, syropami,
+                przyprawami,
+                czy
+                rodzajami mleka lub napojami roślinnymi takimi jak
+                <b>sojowe</b>, <b>owsiane</b> bądź <b>migdałowe</b>.<br>
+                Swoje baristyncze umiejętności szlifuję również w zakresie sztuki <i>Latte art</i>, czyli malowania
+                wzorów
+                na
+                kawie.
+            </p>
+            <p class="article__paragraph">W wolnym czasie lubię grać na gitarze, a także próbuję swoich sił na
+                klawiszach.
+            </p>
+            <p class="article__paragraph">W okresie wiosenno-letnim, kiedy pogoda dopisuje wybieram się ze znajomymi na
+                dalekie wypady
+                rowerowe.
+                Rekreacyjnie też lubię pojeździć na <i>Longboardzie</i>.</p>
+            <p class="article__paragraph">Od czasu do czasu lubię ze znajomymi <em>"pograć w komputer"</em>.</p>
+        </article>
+        <section id="Zestawienie_ulubinej_muzyki" class="musicSection">
+            <h2 class="musicSection__header">Zestawienie ulubinej muzyki</h2>
+            <table class="table">
+                <caption class="table__caption">Tytuły piosenek są linkami do danego utworu na
+                    <i>YouTube</i>
+                    (otwiera się w nowej karcie)
+                </caption>
+                <tr class="table__row">
+                    <th class="table__cell table__header" scope="col">Tytuł</th>
+                    <th class="table__cell table__header" scope="col">Wykonawca</th>
+                    <th class="table__cell table__header" scope="col">Album</th>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__titleHeader" scope="row">
+                        <a class="table__songLink" target="_blank" rel="noreferrer noopener"
+                            href="https://www.youtube.com/watch?v=QP_ekGrN8CE">
+                            Żółta Taksówka
+                        </a>
+                    </th>
+                    <td class="table__cell">Daria Zawiałow</td>
+                    <td class="table__cell">Wojny i Noce</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__titleHeader" scope="row">
+                        <a class="table__songLink" target="_blank" rel="noreferrer noopener"
+                            href="https://www.youtube.com/watch?v=zfL1I7WpEdk">
+                            To co masz Ty!
+                        </a>
+                    </th>
+                    <td class="table__cell">Dawid Podsiadło</td>
+                    <td class="table__cell">Lata dwudzieste</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__titleHeader" scope="row">
+                        <a class="table__songLink" target="_blank" rel="noreferrer noopener"
+                            href="https://www.youtube.com/watch?v=eL-Wyc08Ktc">
+                            kolońska i szlugi
+                        </a>
+                    </th>
+                    <td class="table__cell">Sanah</td>
+                    <td class="table__cell">Irenka</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__titleHeader" scope="row">
+                        <a class="table__songLink" target="_blank" rel="noreferrer noopener"
+                            href="https://www.youtube.com/watch?v=MlInnWzYiZo">
+                            Mogło być nic
+                        </a>
+                    </th>
+                    <td class="table__cell">Kwiat Jabłoni</td>
+                    <td class="table__cell">Mogło być nic</td>
+                </tr>
+                <tr class="table__row">
+                    <th class="table__cell table__titleHeader" scope="row">
+                        <a class="table__songLink" target="_blank" rel="noreferrer noopener"
+                            href="https://www.youtube.com/watch?v=FWDXwrgdm9w">
+                            Dziś późno pójdę spać
+                        </a>
+                    </th>
+                    <td class="table__cell">Kwiat Jabłoni</td>
+                    <td class="table__cell">Niemożliwe</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer class="footer">© 2023 All Rights Reserved.</footer>
+</body>
+
+</html>

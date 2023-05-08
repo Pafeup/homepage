@@ -1,0 +1,20 @@
+.article {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.article__header {
+    text-align: center;
+    border-style: none;
+    border-radius: 5px;
+    background-color: #cccccc60;
+    padding: 10px;
+    box-shadow: 8px 8px 22px -16px rgba(0, 0, 0, 1);
+    margin-top: 30px;
+    vertical-align: auto;
+}
+
+.article__paragraph {
+    padding: 10px;
+}

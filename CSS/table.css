@@ -1,0 +1,52 @@
+.table {
+    border-collapse: collapse;
+    margin: auto;
+    background-color: whitesmoke;
+    box-shadow: 8px 8px 22px -16px rgba(0, 0, 0, 1);
+    overflow-x: auto;
+}
+
+.table__caption {
+    text-align: left;
+    caption-side: bottom;
+}
+
+.table__cell {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.table__header {
+    background-color: #318add;
+    color: white;
+}
+
+.table__titleHeader {
+    background-color: #318addaf;
+    color: white;
+}
+
+.table__row:nth-child(even) {
+    background-color: #ddd;
+}
+
+.table__row:hover {
+    background-color: #ccc;
+}
+
+.table__songLink {
+    text-decoration: none;
+    color: inherit;
+    font-weight: normal;
+}
+
+.table__songLink:hover {
+    text-decoration-line: underline;
+}
+
+.table__songLink:active {
+    color: #333;
+}
