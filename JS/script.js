@@ -1,11 +1,21 @@
-console.log("Witam! Nie nie, proszę nie ściągaj butów.");
+{
+    const welcome = () => {
+        console.log("Witam! Nie nie, proszę nie ściągaj butów.");
+    }
 
-let buttonChangeTheme = document.querySelector(".js-buttonChangeTheme");
-let background = document.querySelector(".body");
-let theme = document.querySelector(".header__themeName")
+    const toggleBackground = () => {
+        const background = document.querySelector(".body");
+        const theme = document.querySelector(".header__themeName")
+        background.classList.toggle("body--dark");
+        theme.innerText = background.classList.contains("body--dark") ? "jasny🌞" : "ciemny🌛"
+    }
 
-buttonChangeTheme.addEventListener("click", () => {
-    background.classList.toggle("body--dark");
-    
-    theme.innerText = background.classList.contains("body--dark") ? "jasny🌞" : "ciemny🌛"
-});
+    const init = () => {
+        const buttonChangeTheme = document.querySelector(".js-buttonChangeTheme");
+        buttonChangeTheme.addEventListener("click", toggleBackground)
+
+        welcome();
+    }
+
+    init();
+}
